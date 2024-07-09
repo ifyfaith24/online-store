@@ -1,4 +1,0 @@
-[build]
-  base = "online-store"
-  publish = "online-store/build"
-  command = "npm run build"

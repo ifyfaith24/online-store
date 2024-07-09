@@ -1,0 +1,4 @@
+[build]
+  base = "stage-two-task/online-store"
+  publish = "stage-two-task/online-store/build"
+  command = "npm run build"

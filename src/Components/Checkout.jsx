@@ -173,7 +173,7 @@ const Checkout = () => {
               </p>
             </div>
           </div>
-          <div className="mt-4 p-4 border-2 lg:mt-0 shadow-md border-gray-200 h-32">
+          <div className="mt-4 p-4 border-2 lg:mt-0 shadow-md border-gray-200 text-nowrap h-32">
             {products.map((product) => (
               <div key={product.id} className="flex">
                 <img
@@ -181,7 +181,7 @@ const Checkout = () => {
                   alt={product.title}
                   className="w-[100px] h-[100px]"
                 />
-                <div className="pl-2">
+                <div className="pl-2 font-bold">
                   <p>{product.title}</p>
                   <p className="text-[#9C0A0A] text-lg">{product.price}</p>
                 </div>

@@ -82,21 +82,21 @@ const Cart = () => {
           </div>
           <div className="block sm:hidden">
             {products.map(product => (
-              <div key={product.id} className="border-2 shadow-md border-gray-300 p-3 w-[320px] h-[120px] flex flex-col items-center justify-between">
+              <div key={product.id} className="border-2 shadow-md border-gray-200 p-2 w-[355px] h-[120px] flex flex-col items-center justify-between">
                 <div className="flex items-center w-full px-2">
                   <img src={product.img} alt={product.title} className="inline-block w-[80px] h-[90px] mr-4" />
                   <p className='text-base relative bottom-8'>{product.title}</p>
                 </div>
                 <div className="flex flex-col items-center w-full relative bottom-16">
                 <p className='font-bold mb-1 text-[#9C0A0A]'>{product.price}</p>
-                  <div className='border-gray-300 border-2 w-[100px] h-[30px] rounded ml-4 text-center p-2 flex justify-between items-center'>
+                  <div className='border-gray-200 border-2 w-[100px] h-[30px] rounded ml-4 text-center p-2 flex justify-between items-center'>
                     <button className="mr-2">-</button>
                     <span>{product.quantity}</span>
                     <button className="ml-2">+</button>
                   </div>
                  
                 </div>
-                <div className="flex justify-end items-center w-full px-8 relative bottom-28">
+                <div className="flex justify-end items-center w-full relative bottom-28">
                   <img src={DeleteIcon} alt="delete icon" className="inline-block mr-2 cursor-pointer" />
                 </div>
               </div>
@@ -104,11 +104,11 @@ const Cart = () => {
           </div>
         </div>
         <div className='lg:w-1/3 lg:ml-4 mt-10 lg:mt-0'>
-          <div className='p-4 border-2 border-gray-200 rounded-md'>
+          <div className='p-4 border-2 border-gray-200 shadow-md rounded-md'>
             <h1 className='text-lg font-bold border h-12 text-center rounded-md flex justify-center pt-2 bg-[#0ABAB5] mb-2'>Order Summary</h1>
             <p className='mb-2'>Enter promo code</p>
             <div className='flex mb-4'>
-              <input type="text" className='flex-grow p-2 border border-gray-300' />
+              <input type="text" placeholder='Promo code' className='flex-grow p-2 border rounded-md border-gray-200' />
               <button className='ml-2 p-2 bg-[#1C1D1E] rounded text-white'>Apply</button>
             </div>
             <div className='mb-2'>

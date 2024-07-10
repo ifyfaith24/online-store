@@ -144,29 +144,29 @@ const Checkout = () => {
         </form>
         <div className="col-span-3 lg:col-span-2 lg:flex lg:space-x-4 mt-4 lg:mt-0">
           <div className="p-4 border-2 border-gray-200 lg:w-96 lg:h-60 shadow-md rounded-md">
-            <h1 className="text-lg font-bold border h-12 text-center rounded-md flex justify-center pt-2 bg-[#0ABAB5] mb-2">
+            <h1 className="text-lg font-bold border h-12 text-center rounded-md flex justify-center pt-2 bg-[#0ABAB5] mb-4">
               Order Summary
             </h1>
            
             <div className="mb-2">
-              <p className="flex justify-between">
+              <p className="flex justify-between font-bold">
                 <span>Subtotal</span>
                 <span>N7,999.99</span>
               </p>
             </div>
             <div className="mb-2">
-              <p className="flex justify-between">
+              <p className="flex justify-between font-bold">
                 <span>Shipping cost</span>
                 <span>N2,000</span>
               </p>
             </div>
             <div className="mb-2">
-              <p className="flex justify-between">
+              <p className="flex justify-between font-bold">
                 <span>Discount</span>
                 <span>N/A</span>
               </p>
             </div>
-            <div className="font-bold">
+            <div className="font-bold mt-6">
               <p className="flex justify-between">
                 <span>Total</span>
                 <span>N9,999.98</span>
